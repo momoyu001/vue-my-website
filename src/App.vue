@@ -11,17 +11,15 @@
 import { RouterLink, RouterView } from "vue-router";
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .main-app-module {
   height: 100%;
   min-width: 800px;
-}
-
-.app-top {
-  height: 100px;
-}
-
-.app-main {
-  height: calc(100% - 100px);
+  .app-top {
+    height: 100px;
+  }
+  .app-main {
+    height: calc(100% - 100px);
+  }
 }
 </style>
