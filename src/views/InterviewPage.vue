@@ -4,7 +4,7 @@
       @change="change"
       :config="sidebarConfig['interview']"
     ></LayoutSide>
-    <div class="content">
+    <div class="content" ref="content">
       <interviewModule
         v-if="componentId === 'interviewModule'"
       ></interviewModule>
@@ -24,9 +24,11 @@ import { sidebarConfig } from "../config";
 import { ref } from "vue";
 
 const componentId = ref("interviewModule");
+const content = ref<InstanceType<any> | null>(null);
 
 function change(name: string) {
   componentId.value = name;
+  content.value.scrollTop = 0;
 }
 </script>
 
