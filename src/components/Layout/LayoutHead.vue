@@ -22,7 +22,7 @@ import { useRouter } from "vue-router";
 const configList: Record<string, string>[] = [
   { title: "面试", key: "interview", router: "/interview" },
   { title: "数据结构和算法", key: "algorithm", router: "/algorithm" },
-  { title: "Javascript", key: "javascript", router: "/javascript" },
+  { title: "JS & TS", key: "javascript", router: "/javascript" },
   { title: "Vue", key: "vue", router: "/vue" },
   { title: "react", key: "react", router: "/react" },
   { title: "源码", key: "code", router: "/sourceCode" },
