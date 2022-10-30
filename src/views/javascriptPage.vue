@@ -7,6 +7,9 @@
     <div class="content">
       <introduce v-if="componentId === 'introduction'"></introduce>
       <typeScriptCom v-else-if="componentId === 'typescript'"></typeScriptCom>
+      <ProxyAndReflectAndDecorator
+        v-else-if="componentId === 'proxy&reflect&decorator'"
+      ></ProxyAndReflectAndDecorator>
     </div>
   </div>
 </template>
@@ -14,6 +17,7 @@
 <script setup lang="ts">
 import introduce from "../posts/javascript/introduction.md";
 import typeScriptCom from "../posts/javascript/typescript.md";
+import ProxyAndReflectAndDecorator from "../posts/javascript/Proxy&Reflect&装饰器.md";
 
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";

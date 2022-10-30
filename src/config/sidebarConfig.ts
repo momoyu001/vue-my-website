@@ -17,6 +17,7 @@ const dataStructorAndAlgorithm = [{ title: "专栏简介", name: "introduction" 
 const javaScript = [
   { title: "专栏简介", name: "introduction" },
   { title: "TypeScript笔记", name: "typescript" },
+  { title: "Proxy&Reflect&装饰器", name: "proxy&reflect&decorator" },
 ];
 
 // Vue
