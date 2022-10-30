@@ -1,17 +1,26 @@
 <template>
   <div class="layout-side-module">
-    <div v-for="item in tempRouter" :key="item.path" class="side-item">
-      <div class="side-item-txt">{{ item.meta && item.meta.title }}</div>
+    <div v-for="item in list" :key="item.name" class="side-item">
+      <div class="side-item-txt" @click="clickItem(item)">{{ item.title }}</div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const tempRouter: Record<string, any>[] = [
-  { path: "/1", component: "", meta: { title: "测试一" } },
-  { path: "/2", component: "", meta: { title: "测试二" } },
-  { path: "/3", component: "", meta: { title: "测试三" } },
-];
+import { sidebarConfig } from "../../config";
+import { ref } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+const currentPath = ref(route.path);
+const list = sidebarConfig[currentPath.value ? currentPath.value.slice(1) : ""];
+
+const emits = defineEmits(["change"]);
+
+function clickItem(item: Record<string, any>) {
+  const { name } = item;
+  emits("change", name);
+}
 </script>
 
 <style scoped lang="less">

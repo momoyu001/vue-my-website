@@ -32,7 +32,7 @@ watch(
   height: 100%;
   min-width: 800px;
   .app-main {
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
   }
 }
 </style>
