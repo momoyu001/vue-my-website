@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@yankeeinlondon/code-builder": "^1.0.7",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },

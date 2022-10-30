@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 import Markdown from "vite-plugin-md";
+import code from "@yankeeinlondon/code-builder";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,6 +21,11 @@ export default defineConfig({
       style: {
         baseStyle: "github",
       },
+      builders: [
+        code({
+          theme: "solarizedLight", // 代码块高亮样式
+        }),
+      ],
     }),
   ],
   resolve: {
