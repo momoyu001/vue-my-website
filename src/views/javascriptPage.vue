@@ -11,6 +11,7 @@
         v-else-if="componentId === 'proxy&reflect&decorator'"
       ></ProxyAndReflectAndDecorator>
       <JSCode v-else-if="componentId === 'JSCode'"></JSCode>
+      <JSNote v-else-if="componentId === 'JSNote'"></JSNote>
     </div>
   </div>
 </template>
@@ -20,6 +21,7 @@ import introduce from "../posts/javascript/introduction.md";
 import typeScriptCom from "../posts/javascript/typescript.md";
 import ProxyAndReflectAndDecorator from "../posts/javascript/Proxy&Reflect&装饰器.md";
 import JSCode from "../posts/javascript/JS手写题.md"; // JS 手写题
+import JSNote from "../posts/javascript/JS笔记.md"; // JS 笔记
 
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";

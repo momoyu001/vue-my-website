@@ -19,6 +19,7 @@ const javaScript = [
   { title: "TypeScript笔记", name: "typescript" },
   { title: "Proxy&Reflect&装饰器", name: "proxy&reflect&decorator" },
   { title: "JS 手写题", name: "JSCode" },
+  { title: "JS 笔记", name: "JSNote" },
 ];
 
 // Vue
