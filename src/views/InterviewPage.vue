@@ -1,6 +1,9 @@
 <template>
   <div class="flex interview-page-module">
-    <LayoutSide @change="change"></LayoutSide>
+    <LayoutSide
+      @change="change"
+      :config="sidebarConfig['interview']"
+    ></LayoutSide>
     <div class="content">
       <interviewModule
         v-if="componentId === 'interviewModule'"
@@ -16,6 +19,7 @@
 import interviewModule from "../posts/interview/interviewByModule.md";
 import interviewCompany from "../posts/interview/interviewByCompany.md";
 import LayoutSide from "../components/Layout/LayoutSide.vue";
+import { sidebarConfig } from "../config";
 
 import { ref } from "vue";
 

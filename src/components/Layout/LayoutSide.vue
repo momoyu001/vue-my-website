@@ -1,7 +1,7 @@
 <template>
   <div class="layout-side-module">
     <div
-      v-for="item in list"
+      v-for="item in config"
       :key="item.name"
       class="side-item"
       :class="{ 'active-item': active === item.name }"
@@ -12,14 +12,17 @@
 </template>
 
 <script setup lang="ts">
-import { sidebarConfig } from "../../config";
 import { ref } from "vue";
-import { useRoute } from "vue-router";
 
-const route = useRoute();
-const currentPath = ref(route.path);
-const list = sidebarConfig[currentPath.value ? currentPath.value.slice(1) : ""];
-const active = ref(list[0]?.name);
+interface Props {
+  config: { title: string; name: string }[];
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  // config is required
+});
+
+const active = ref(props.config[0]?.name);
 
 const emits = defineEmits(["change"]);
 
