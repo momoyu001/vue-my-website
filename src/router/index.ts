@@ -47,6 +47,11 @@ const router = createRouter({
       name: "daily",
       component: () => import("../views/dailyPage.vue"),
     },
+    {
+      path: "/other",
+      name: "other",
+      component: () => import("../views/otherPage.vue"),
+    },
   ],
 });
 

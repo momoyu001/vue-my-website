@@ -27,6 +27,7 @@ const configList: Record<string, string>[] = [
   { title: "react", key: "react", router: "/react" },
   { title: "源码", key: "code", router: "/sourceCode" },
   { title: "每日随笔", key: "random", router: "/daily" },
+  { title: "其他", key: "other", router: "/other" },
 ];
 
 const router = useRouter();

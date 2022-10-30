@@ -28,6 +28,9 @@ const sourceCode = [{ title: "专栏简介", name: "introduction" }];
 // 日常随笔
 const daily = [{ title: "专栏简介", name: "introduction" }];
 
+// 其他
+const other = [{ title: "专栏简介", name: "introduction" }];
+
 export const sidebarConfig: Record<string, any> = {
   interview: interviewList,
   algorithm: dataStructorAndAlgorithm,
@@ -36,4 +39,5 @@ export const sidebarConfig: Record<string, any> = {
   react,
   sourceCode,
   daily,
+  other,
 };
