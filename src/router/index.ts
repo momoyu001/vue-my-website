@@ -12,6 +12,11 @@ const router = createRouter({
       name: "home",
       component: () => import("../views/HomeView.vue"),
     },
+    {
+      path: "/interview",
+      name: "interview",
+      component: () => import("../views/InterviewPage.vue"),
+    },
   ],
 });
 
