@@ -29,6 +29,7 @@ const javaScript = [
 const vue = [
   { title: "专栏简介", name: "introduction" },
   { title: "vue-class-component", name: "vueClassComponent" },
+  { title: "vue3学习笔记", name: "vue3" },
 ];
 
 // react

@@ -6,6 +6,7 @@
       <vueClassComponent
         v-else-if="componentId === 'vueClassComponent'"
       ></vueClassComponent>
+      <vue3 v-else-if="componentId === 'vue3'"></vue3>
     </div>
   </div>
 </template>
@@ -13,6 +14,7 @@
 <script setup lang="ts">
 import introduce from "../posts/vue/introduction.md";
 import vueClassComponent from "../posts/vue/vueClassComponent.md";
+import vue3 from "../posts/vue/vue3学习笔记.md";
 
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";
