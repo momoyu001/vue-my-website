@@ -1,5 +1,5 @@
 <template>
-  <div class="markdown-body">
+  <div class="p-2">
     <aaa></aaa>
   </div>
 </template>
