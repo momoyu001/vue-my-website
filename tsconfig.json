@@ -3,8 +3,8 @@
   "include": [
     "env.d.ts",
     "shims.d.ts",
-    "src/**/*",
     "src/**/*.vue",
+    "src/**/*.ts",
   ],
   "compilerOptions": {
     "baseUrl": ".",
