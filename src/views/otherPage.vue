@@ -6,6 +6,7 @@
       <established v-else-if="componentId === 'established'"></established>
       <webpack v-else-if="componentId === 'webpack'"></webpack>
       <htmlAndCss v-else-if="componentId === 'html&css'"></htmlAndCss>
+      <gitNote v-else-if="componentId === 'gitNote'"></gitNote>
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@ import introduce from "../posts/other/introduction.md";
 import established from "../posts/other/established.md";
 import webpack from "../posts/other/webpack.md";
 import htmlAndCss from "../posts/other/html&css.md"; // html & css 笔记
+import gitNote from "../posts/other/git笔记.md"; // git 笔记
 
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";
