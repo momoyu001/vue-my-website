@@ -33,6 +33,7 @@ const configList: Record<string, string>[] = [
 const router = useRouter();
 
 function toPage(route: string) {
+  console.log("to page: ", route);
   if (!route) return;
   router.push(route);
 }
