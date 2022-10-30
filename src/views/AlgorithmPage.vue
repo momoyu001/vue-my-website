@@ -6,12 +6,15 @@
     ></LayoutSide>
     <div class="content">
       <introduce v-if="componentId === 'introduction'"></introduce>
+      <note v-else-if="componentId === 'note'"></note>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import introduce from "../posts/algorithm/introduction.md";
+import note from "../posts/algorithm/算法笔记.md";
+
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";
 

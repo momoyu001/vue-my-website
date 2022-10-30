@@ -11,7 +11,10 @@ const interviewList = [
 ];
 
 // 数据结构和算法
-const dataStructorAndAlgorithm = [{ title: "专栏简介", name: "introduction" }];
+const dataStructorAndAlgorithm = [
+  { title: "专栏简介", name: "introduction" },
+  { title: "算法笔记", name: "note" },
+];
 
 // JavaScript
 const javaScript = [
