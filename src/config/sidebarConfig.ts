@@ -42,6 +42,7 @@ const other = [
   { title: "专栏简介", name: "introduction" },
   { title: "项目工程搭建", name: "established" },
   { title: "webpack", name: "webpack" },
+  { title: "HTML & CSS", name: "html&css" },
 ];
 
 export const sidebarConfig: Record<string, any> = {
