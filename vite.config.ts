@@ -23,7 +23,7 @@ export default defineConfig({
       },
       builders: [
         code({
-          theme: "solarizedLight", // 代码块高亮样式
+          theme: "base", // 代码块高亮样式
         }),
       ],
     }),
