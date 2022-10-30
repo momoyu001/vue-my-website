@@ -3,12 +3,14 @@
     <LayoutSide @change="change" :config="sidebarConfig['other']"></LayoutSide>
     <div class="content">
       <introduce v-if="componentId === 'introduction'"></introduce>
+      <established v-else-if="componentId === 'established'"></established>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import introduce from "../posts/other/introduction.md";
+import established from "../posts/other/established.md";
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";
 

@@ -29,7 +29,10 @@ const sourceCode = [{ title: "专栏简介", name: "introduction" }];
 const daily = [{ title: "专栏简介", name: "introduction" }];
 
 // 其他
-const other = [{ title: "专栏简介", name: "introduction" }];
+const other = [
+  { title: "专栏简介", name: "introduction" },
+  { title: "项目工程搭建", name: "established" },
+];
 
 export const sidebarConfig: Record<string, any> = {
   interview: interviewList,
