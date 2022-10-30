@@ -24,9 +24,10 @@ import LayoutSide from "./LayoutSide.vue";
     height: 100%;
     border-right: 1px solid #d3d3d3;
   }
-  .main-right {
+  .main-container {
     flex: 1 1;
     height: 100%;
+    overflow: auto;
   }
 }
 </style>
