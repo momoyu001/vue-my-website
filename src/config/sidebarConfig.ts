@@ -35,6 +35,7 @@ const daily = [{ title: "专栏简介", name: "introduction" }];
 const other = [
   { title: "专栏简介", name: "introduction" },
   { title: "项目工程搭建", name: "established" },
+  { title: "webpack", name: "webpack" },
 ];
 
 export const sidebarConfig: Record<string, any> = {
