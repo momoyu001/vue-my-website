@@ -33,6 +33,11 @@ const router = createRouter({
       component: () => import("../views/vuePage.vue"),
     },
     {
+      path: "/react",
+      name: "react",
+      component: () => import("../views/reactPage.vue"),
+    },
+    {
       path: "/sourceCode",
       name: "sourceCode",
       component: () => import("../views/sourceCodePage.vue"),

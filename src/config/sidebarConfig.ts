@@ -19,6 +19,9 @@ const javaScript = [{ title: "专栏简介", name: "introduction" }];
 // Vue
 const vue = [{ title: "专栏简介", name: "introduction" }];
 
+// react
+const react = [{ title: "专栏简介", name: "introduction" }];
+
 // 源码
 const sourceCode = [{ title: "专栏简介", name: "introduction" }];
 
@@ -30,6 +33,7 @@ export const sidebarConfig: Record<string, any> = {
   algorithm: dataStructorAndAlgorithm,
   javaScript,
   vue,
+  react,
   sourceCode,
   daily,
 };

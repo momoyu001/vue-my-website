@@ -24,6 +24,7 @@ const configList: Record<string, string>[] = [
   { title: "数据结构和算法", key: "algorithm", router: "/algorithm" },
   { title: "Javascript", key: "javascript", router: "/javascript" },
   { title: "Vue", key: "vue", router: "/vue" },
+  { title: "react", key: "react", router: "/react" },
   { title: "源码", key: "code", router: "/sourceCode" },
   { title: "每日随笔", key: "random", router: "/daily" },
 ];
