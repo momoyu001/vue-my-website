@@ -17,6 +17,31 @@ const router = createRouter({
       name: "interview",
       component: () => import("../views/InterviewPage.vue"),
     },
+    {
+      path: "/algorithm",
+      name: "algorithm",
+      component: () => import("../views/AlgorithmPage.vue"),
+    },
+    {
+      path: "/javascript",
+      name: "javascript",
+      component: () => import("../views/javascriptPage.vue"),
+    },
+    {
+      path: "/vue",
+      name: "vue",
+      component: () => import("../views/vuePage.vue"),
+    },
+    {
+      path: "/sourceCode",
+      name: "sourceCode",
+      component: () => import("../views/sourceCodePage.vue"),
+    },
+    {
+      path: "/daily",
+      name: "daily",
+      component: () => import("../views/dailyPage.vue"),
+    },
   ],
 });
 

@@ -22,10 +22,10 @@ import { useRouter } from "vue-router";
 const configList: Record<string, string>[] = [
   { title: "面试", key: "interview", router: "/interview" },
   { title: "数据结构和算法", key: "algorithm", router: "/algorithm" },
-  { title: "Javascript", key: "javascript", router: "" },
-  { title: "Vue", key: "vue", router: "" },
-  { title: "源码", key: "code", router: "" },
-  { title: "每日随笔", key: "random", router: "" },
+  { title: "Javascript", key: "javascript", router: "/javascript" },
+  { title: "Vue", key: "vue", router: "/vue" },
+  { title: "源码", key: "code", router: "/sourceCode" },
+  { title: "每日随笔", key: "random", router: "/daily" },
 ];
 
 const router = useRouter();
