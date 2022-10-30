@@ -1,5 +1,9 @@
 <template>
-  <div class="markdown-body">面试集合</div>
+  <div class="markdown-body">
+    <aaa></aaa>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import aaa from "../posts/interview/interviewByModule.md";
+</script>
