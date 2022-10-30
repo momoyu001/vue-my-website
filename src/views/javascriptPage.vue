@@ -6,12 +6,15 @@
     ></LayoutSide>
     <div class="content">
       <introduce v-if="componentId === 'introduction'"></introduce>
+      <typeScriptCom v-else-if="componentId === 'typescript'"></typeScriptCom>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import introduce from "../posts/javascript/introduction.md";
+import typeScriptCom from "../posts/javascript/typescript.md";
+
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";
 
