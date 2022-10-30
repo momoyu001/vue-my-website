@@ -16,7 +16,11 @@ export default defineConfig({
     vue({
       include: [/\.vue$/, /\.md$/],
     }),
-    Markdown(),
+    Markdown({
+      style: {
+        baseStyle: "github",
+      },
+    }),
   ],
   resolve: {
     alias: {
