@@ -3,12 +3,17 @@
     <LayoutSide @change="change" :config="sidebarConfig['vue']"></LayoutSide>
     <div class="content">
       <introduce v-if="componentId === 'introduction'"></introduce>
+      <vueClassComponent
+        v-else-if="componentId === 'vueClassComponent'"
+      ></vueClassComponent>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import introduce from "../posts/vue/introduction.md";
+import vueClassComponent from "../posts/vue/vueClassComponent.md";
+
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";
 
