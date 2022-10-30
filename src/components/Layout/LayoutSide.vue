@@ -6,8 +6,8 @@
   </div>
 </template>
 
-<script setup>
-const tempRouter = [
+<script setup lang="ts">
+const tempRouter: Record<string, any>[] = [
   { path: "/1", component: "", meta: { title: "测试一" } },
   { path: "/2", component: "", meta: { title: "测试二" } },
   { path: "/3", component: "", meta: { title: "测试三" } },

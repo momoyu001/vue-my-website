@@ -16,10 +16,10 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useRouter } from "vue-router";
 
-const configList = [
+const configList: Record<string, string>[] = [
   { title: "面试", key: "interview", router: "/interview" },
   { title: "数据结构和算法", key: "algorithm", router: "/algorithm" },
   { title: "Javascript", key: "javascript", router: "" },
@@ -30,7 +30,7 @@ const configList = [
 
 const router = useRouter();
 
-function toPage(route) {
+function toPage(route: string) {
   if (!route) return;
   router.push(route);
 }
