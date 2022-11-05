@@ -7,6 +7,7 @@
       <webpack v-else-if="componentId === 'webpack'"></webpack>
       <htmlAndCss v-else-if="componentId === 'html&css'"></htmlAndCss>
       <gitNote v-else-if="componentId === 'gitNote'"></gitNote>
+      <nrm v-else-if="componentId === 'nrm'"></nrm>
     </div>
   </div>
 </template>
@@ -17,6 +18,7 @@ import established from "../posts/other/established.md";
 import webpack from "../posts/other/webpack.md";
 import htmlAndCss from "../posts/other/html&css.md"; // html & css 笔记
 import gitNote from "../posts/other/git笔记.md"; // git 笔记
+import nrm from "../posts/other/nrm.md"; // nrm 安装与使用
 
 import LayoutSide from "../components/Layout/LayoutSide.vue";
 import { sidebarConfig } from "../config";

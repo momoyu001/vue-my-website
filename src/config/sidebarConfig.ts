@@ -48,6 +48,7 @@ const other = [
   { title: "webpack", name: "webpack" },
   { title: "HTML & CSS", name: "html&css" },
   { title: "Git 笔记", name: "gitNote" },
+  { title: "nrm 安装与使用", name: "nrm" },
 ];
 
 export const sidebarConfig: Record<string, any> = {
